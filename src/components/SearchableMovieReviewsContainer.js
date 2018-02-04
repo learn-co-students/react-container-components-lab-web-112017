@@ -15,7 +15,7 @@ class SearchableMovieReviewsContainer extends React.Component {
   }
 
   fetchQuery = (query) => {
-    const NYT_API_KEY = '2b66d3969e124f6c974d6a5f407d5e14'
+    const NYT_API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?' + `api-key=${NYT_API_KEY}` +`&query=${query.replace(" ","+")}`
     fetch(URL)
       .then(res => res.json())
